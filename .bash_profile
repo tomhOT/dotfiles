@@ -40,21 +40,10 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # Convenience
-alias m="cd /Users/thsieh/home/puppet-modules/dev-environment/shared/mezzo"
-alias f="cd /Users/thsieh/home/puppet-modules/dev-environment/shared/mezzo/app/javascript/components"
 alias h="cd /Users/thsieh/home"
-alias hh="cd /Users/thsieh"
-alias t="cd /Users/thsieh/home/test"
-alias e="cd /Users/thsieh/home/eseeker"
 
 # MacOS stuff
 export BASH_SILENCE_DEPRECATION_WARNING=1 # suppresses zsh shill
-
-# Nix shell and Catalina conflict :(
-export NIX_IGNORE_SYMLINK_STORE=1
-if [ -e /Users/thsieh/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/thsieh/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-complete -C /usr/local/bin/terraform terraform
 
 # Golang
 export GO111MODULE=on
